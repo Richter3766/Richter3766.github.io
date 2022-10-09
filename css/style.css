@@ -40,7 +40,7 @@ body {
 
 #greeting {
     margin: 0%;
-    font-size: 310% ;
+    font-size: 300% ;
     position: relative;
     min-height: 100px;
 }
@@ -90,4 +90,13 @@ button {
     background: transparent;
     color: white;
     text-align: center;
+}
+
+#todo-form{
+    font-size: 200%;
+
+}
+#todo-list{
+    font-size: 125%;
+
 }
