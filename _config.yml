@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: "Richter3766's blog"
+title: "HyeonSoo's blog"
 
 # Your name to show in the footer
-author: Richter3766
+author: KangHyeonSoo
 
 remote_theme: daattali/beautiful-jekyll
 url: 'https://Richter3766.github.io'
@@ -53,7 +53,7 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: 'rkdgustn555@gmail.com'
+  email: 'hyeonsoo1248@gmail.com'
   rss: true # remove this line if you don't want to show an RSS link at the bottom
   github: Richter3766
   # youtube: "@daattali"
