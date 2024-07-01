@@ -16,8 +16,8 @@ title: My website
 author: Richter3766r
 
 remote_theme : daattali/beautiful-jekyll
-url                      : "https://Richter3766.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+url : "https://Richter3766.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl : "" # the subpath of your site, e.g. "/blog"
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
