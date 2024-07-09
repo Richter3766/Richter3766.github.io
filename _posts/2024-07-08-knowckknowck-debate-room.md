@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 프로젝트 똑똑, 토론방 구현하기1
-subtitle: 실시간 토론 구현하기
+title: 프로젝트 똑똑, 토론방 구현 (1)
+subtitle: 토론방 구현 기술 선택
 gh-repo: Richter3766/Richter.github.io
 tags: [project, knowckknowck]
 comments: true
