@@ -6,7 +6,7 @@ gh-repo: Richter3766/Richter.github.io
 tags: [challenge]
 comments: true
 mathjax: true
-author: Richter3766
+author: HyeonSoo
 ---
 
 이전의 프로젝트 내용을 복기하고 개선안을 고민하고자 해요.
