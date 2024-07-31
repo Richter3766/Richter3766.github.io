@@ -19,15 +19,15 @@ author: HyeonSoo
 
 아래는 앞으로 다룰 내용을 개략적으로 정리한 것으로 추후 글을 작성하며 구체화해갈 예정이다.
 
-## 개요
-
 ---
+
+## 개요
 
 이 글에서는 Redis를 이용해 캐싱을 구현하던 도중 만난 문제를 해결하는 과정을 보여주고자 한다.
 
-## 1. 문제 정의 및 동기
-
 ---
+
+## 1. 문제 정의 및 동기
 
 토론방 정보를 불러올 때 성능 개선을 위해 Redis를 활용해 Look-aside 방식으로 캐싱하기로 했다.
 
@@ -62,9 +62,9 @@ com.knu.KnowcKKnowcK.dto.responsedto.MessageResponseDto["createdTime"])
 
 캐싱을 위해선 반드시 위 문제가 해결되어야 했으므로, 찬찬히 문제를 해결해보기로 했다.
 
-## 2. 해결 전략 수립
-
 ---
+
+## 2. 해결 전략 수립
 
 로그를 봤을 때 가장 먼저 눈에 띄었던 것은 SerializationException과 LocalDateTime이었다.
 
@@ -72,9 +72,9 @@ com.knu.KnowcKKnowcK.dto.responsedto.MessageResponseDto["createdTime"])
 
 그래서 이 지점을 중심으로 구글링을 통해 문제 해결 방법을 찾아보기로 했다.
 
-## 3. 해결 과정
-
 ---
+
+## 3. 해결 과정
 
 문제 해결을 위해 오류의 메인인 듯한
 
@@ -109,14 +109,16 @@ implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.3'
 
 LocalDateTime 필드에 @JsonSerialize, @JsonDeserialize 어노테이션을 추가하여 정상적으로 직렬화를 진행할 수 있게 명시해준 후, @JsonFormat으로 저장할 형식을 명시해주었다.
 
-## 4. 결과
-
 ---
+
+## 4. 결과
 
 위와 같이 코드를 수정한 후에는 더이상 위와 같은 오류가 나지 않음을 확인할 수 있었다.
 
-## 참고 자료
-
 ---
 
+## 참고 자료
+
 [https://velog.io/@wonizizi99/TIL-23.06.30-레디스-캐시-적용시-직렬화에-대한-에러](https://velog.io/@wonizizi99/TIL-23.06.30-%EB%A0%88%EB%94%94%EC%8A%A4-%EC%BA%90%EC%8B%9C-%EC%A0%81%EC%9A%A9%EC%8B%9C-%EC%A7%81%EB%A0%AC%ED%99%94%EC%97%90-%EB%8C%80%ED%95%9C-%EC%97%90%EB%9F%AC)
+
+---
