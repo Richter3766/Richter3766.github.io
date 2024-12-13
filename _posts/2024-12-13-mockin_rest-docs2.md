@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 코틀린 DSL을 활용한 컨트롤러 테스트 코드 개선
-subtitle: 중복 코드를 줄이고, 사용하기 쉽게 만들기
+title: 컨트롤러 테스트 코드 개선하기
+subtitle: 코틀린 DSL을 활용해 중복 코드를 줄이고, 사용하기 쉽게 만들기
 gh-repo: Richter3766/Richter.github.io
 tags: [project, Mockin]
 comments: true
