@@ -62,7 +62,7 @@ author: HyeonSoo
 
 위는 Spring Rest Docs를 위해 작성한 컨트롤러 테스트 코드입니다.
 
-훌륭하게 동작하지만, dto 생성과 makeDocument를 위해 파라미터 값들을 손으로 일일이 작성해야 하는 큰 번거로움이 있었습니다.
+훌륭하게 동작하지만, dto 생성과 `makeDocument`를 위해 파라미터 값들을 손으로 일일이 작성해야 하는 큰 번거로움이 있었습니다.
 
 게다가 dto의 필드가 충분히 많은 경우(약 20개 정도) 줄을 끝없이 내려야 할 정도로 가독성이 좋지 않았습니다. 수정하기 힘든 건 말할 것도 없었구요.
 
@@ -346,4 +346,4 @@ fun responseBody(bodies: List<Pair<Field, String>>): List<FieldDescriptor>{
 
 ## 참고 자료
 
-https://tech.kakaopay.com/post/given-test-code/
+[실무에서 적용하는 테스트 코드 작성 방법과 노하우 Part 3: Given 지옥에서 벗어나기 - 객체 기반 데이터 셋업의 한계](https://tech.kakaopay.com/post/given-test-code/)
