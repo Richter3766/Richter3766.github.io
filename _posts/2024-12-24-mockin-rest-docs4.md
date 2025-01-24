@@ -1,7 +1,7 @@
 ---
 layout: post
 title: REST Docs 경로 문제 해결
-subtitle: '/' 하나가 만들어낸 눈덩이
+subtitle: / 하나가 만들어낸 눈덩이
 gh-repo: Richter3766/Richter.github.io
 tags: [project, Mockin]
 comments: true
