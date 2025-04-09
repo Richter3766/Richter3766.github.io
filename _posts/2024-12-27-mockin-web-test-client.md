@@ -19,8 +19,7 @@ author: HyeonSoo
 
 ## 1. 문제 정의 및 동기
 
-프로젝트에 JWT 인증을 위해 Security를 추가한 이후 테스트 코드를 수정해야 했습니다.
-
+프로젝트에 JWT 인증을 위해 Security를 추가한 이후 테스트 코드를 수정해야 했습니다.  
 현재 `mockMvc`에는 security 관련 설정이 추가되어 있지 않아, 테스트 실행 시 `authentication`이 null로 나오는 문제가 있었기 때문입니다.
 
 그래서 아래와 같이 설정을 추가했습니다.
@@ -203,8 +202,7 @@ fun <T: Any> WebTestClient.postWithBody(uri: String, requestBody: T, expectedDto
 }
 ```
 
-`mockMvc`의 경우 `ResultActionsDsl`을 반환해야 했는데, `webTestClient`는 `BodyContentSpec`을 반환해야 한다는 점과, 설정 방식이 살짝 다른 점 말고는 크게 다르지 않았습니다.
-
+`mockMvc`의 경우 `ResultActionsDsl`을 반환해야 했는데, `webTestClient`는 `BodyContentSpec`을 반환해야 한다는 점과, 설정 방식이 살짝 다른 점 말고는 크게 다르지 않았습니다.  
 해당 내용은 [공식 문서](https://docs.spring.io/spring-framework/reference/testing/webtestclient.html)를 참고하여 진행했습니다.
 
 그리고 Rest Docs의 경우 아래와 같이
@@ -244,8 +242,7 @@ fun ResultActionsDsl.makeDocument(
 }
 ```
 
-정말 큰 코드 변화 없이 마이그레이션을 마칠 수 있었습니다.
-
+정말 큰 코드 변화 없이 마이그레이션을 마칠 수 있었습니다.  
 위처럼 수정하자 테스트 코드가 다행히 정상 동작함을 볼 수 있었습니다.
 
 ## 4. 결과

@@ -132,8 +132,8 @@ infix fun <T> String.toDto(dto: Class<T>): T {
 ```
 
 ```kotlin
-	      // 변경 이후
-    		val requestParams = readjsonFile(uri, "requestDto.json") toDto CCNLRequestParameterDto::class.java
+	    // 변경 이후
+    	val requestParams = readjsonFile(uri, "requestDto.json") toDto CCNLRequestParameterDto::class.java
         val expectedDto = readjsonFile(uri, "responseDto.json") toDto KISCCNLResponseDto::class.java
 
 ```
@@ -142,8 +142,7 @@ dto의 필드 수만큼 길었던 코드가 단 한 줄로 개선됐습니다!
 
 그리고 특정 dto의 필드를 바꾸어 테스트할 때에도 json만 수정하면 되므로 향후 유지보수 및 활용성도 훌륭하다는 생각이 들었습니다.
 
-위와 같이 수정하고 나니 Rest Docs 작성을 위한 부분도 json을 활용해 개선할 수 있을 것 같았습니다.
-
+위와 같이 수정하고 나니 Rest Docs 작성을 위한 부분도 json을 활용해 개선할 수 있을 것 같았습니다.  
 현재 `makeDocument`에서 요청, 응답 필드 작성 시 아래와 같은 형식을 가집니다.
 
 ```kotlin
@@ -156,11 +155,9 @@ dto의 필드 수만큼 길었던 코드가 단 한 줄로 개선됐습니다!
 현재 api에 활용되는 거의 모든 필드는 STRING 타입만을 가지기 때문에, 충분히 json을 통해 해당 부분을 분리할 수 있을 것 같았습니다.
 
 그래서 requestDtoDescription.json, responseDtoDescription.json을 각각 생성하고,
-
 `{“필드 이름”: “설명”}`과 같은 형식으로 통일했습니다.
 
-그리고 이를 읽어와 `makeDocument`의 인자로 넘겨주도록 구현했습니다.
-
+그리고 이를 읽어와 `makeDocument`의 인자로 넘겨주도록 구현했습니다.  
 아래는 해당 부분을 구현한 함수입니다.
 
 ```kotlin
@@ -220,8 +217,7 @@ fun String.toBody(): List<Pair<Field, String>> {
 
 또 `expire_in` 필드만 NUMBER 타입이었으므로 해당 부분만 따로 처리하도록 분기를 뒀습니다.
 
-나머지의 경우 전부 STRING 타입으로 처리했습니다.
-
+나머지의 경우 전부 STRING 타입으로 처리했습니다.  
 그리고 위에서 만든 List를 Rest Docs에서 적절히 활용할 수 있도록 함수를 추가했습니다.
 
 ```kotlin
@@ -279,8 +275,7 @@ fun responseBody(bodies: List<Pair<Field, String>>): List<FieldDescriptor>{
         )
 ```
 
-확실히 코드가 깔끔해진 것이 체감되지 않나요?
-
+확실히 코드가 깔끔해진 것이 체감되지 않나요?  
 필드명 및 설명 변경이 필요한 경우 해당 uri 위치의 json만 바꾸면 되므로, 이전에 비해 수정도 쉬워졌습니다.
 
 ## 4. 결과
@@ -309,10 +304,8 @@ fun responseBody(bodies: List<Pair<Field, String>>): List<FieldDescriptor>{
 
 특히 dto 필드가 많은 테스트 코드에서 체감이 훨씬 컸습니다. 스크롤을 한참 내리던 걸 조금만 내려도 원하는 부분을 쉽게 찾을 수 있었기 때문입니다.
 
-다만 저처럼 Rest Docs 작성을 단순화한 방법을 적용할 때 유의해야 할 점이 있습니다.
-
-저가 구현한 함수는 테스트 코드를 빠르게 작성할 수 있는 장점이 있지만, 문서에 포함될 설명을 충분히 구체적으로 표현하기 어려운 경우가 많습니다.
-
+다만 저처럼 Rest Docs 작성을 단순화한 방법을 적용할 때 유의해야 할 점이 있습니다.  
+저가 구현한 함수는 테스트 코드를 빠르게 작성할 수 있는 장점이 있지만, 문서에 포함될 설명을 충분히 구체적으로 표현하기 어려운 경우가 많습니다.  
 즉, 테스트 코드 작성의 속도와 Rest Docs의 내용 구체성 사이에서 트레이드오프가 발생하는 것입니다.
 
 그리고 위처럼 Rest Docs 작성을 단순화하는 접근이 가능했던 주요한 이유는 현재 API에서 대부분의 필드가 String 타입이라는 점입니다.
@@ -338,8 +331,7 @@ fun responseBody(bodies: List<Pair<Field, String>>): List<FieldDescriptor>{
 }
 ```
 
-형식으로 작성하고, 해당 필드에 대해 Rest Docs를 작성하도록 함수를 구현하는 것이죠.
-
+형식으로 작성하고, 해당 필드에 대해 Rest Docs를 작성하도록 함수를 구현하는 것이죠.  
 이 부분은 추후에 여유가 된다면 시도해보도록 하겠습니다.
 
 긴 글 읽어주셔서 감사합니다.

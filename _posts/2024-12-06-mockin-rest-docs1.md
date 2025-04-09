@@ -17,18 +17,12 @@ author: HyeonSoo
 
 저희 프로젝트 환경은 아래와 같으며, 컨트롤러에는 비동기 프로그래밍이 적용되어 있다는 점 참고바랍니다.
 
-언어: Kotlin
-
-Spring Framework: 6.1.13
-
-Spring Boot: 3.3.4
-
-kotest: 5.9.1
-
-mockMvc: 3.0.2
-
-mockk: 1.13.12
-
+언어: Kotlin  
+Spring Framework: 6.1.13  
+Spring Boot: 3.3.4  
+kotest: 5.9.1  
+mockMvc: 3.0.2  
+mockk: 1.13.12  
 coroutine: 1.9.0
 
 ## 1. 문제 정의 및 동기
