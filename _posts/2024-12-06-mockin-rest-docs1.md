@@ -206,6 +206,5 @@ API 문서 자동화는 단순히 문서를 만드는 작업을 넘어서,
 
 ## 참고 자료
 
-[Generate RESTful API documentation using Kotlin, Kotest, MockMvc and Spring REST Docs](https://medium.com/@ilboogl/generate-restful-api-documentation-using-kotlin-kotest-mockmvc-and-spring-rest-docs-53a156317320)
-
+[Generate RESTful API documentation using Kotlin, Kotest, MockMvc and Spring REST Docs](https://medium.com/@ilboogl/generate-restful-api-documentation-using-kotlin-kotest-mockmvc-and-spring-rest-docs-53a156317320)  
 [Spring Boot Async Requests](https://docs.spring.io/spring-framework/reference/6.0/testing/spring-mvc-test-framework/async-requests.html)
