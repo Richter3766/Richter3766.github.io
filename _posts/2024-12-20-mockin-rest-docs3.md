@@ -11,7 +11,7 @@ author: HyeonSoo
 
 ## 개요
 
-이전에 Kotlin DSL을 활용하여 Spring Rest Docs를 위한 코드를 쉽고 직관적으로 변경했었습니다.
+[이전 글](./2024-12-13-mockin_rest-docs2.md)에서 Kotlin DSL을 활용하여 Spring Rest Docs를 위한 코드를 쉽고 직관적으로 변경했었습니다.
 
 하지만 여전히 아쉬움이 남았었던 부분이 있었는데요.
 
@@ -99,8 +99,7 @@ author: HyeonSoo
 
 여기서 `ClassPathResource`는 Spring 프레임워크에서 제공하는 클래스로, json 등의 리소스를 어플리케이션의 클래스 패스로부터 찾을 때 활용할 수 있습니다.
 
-이제 json을 성공적으로 읽어왔으니, 원하는 Dto로 변환만 해주면 됩니다.
-
+이제 json을 성공적으로 읽어왔으니, 원하는 Dto로 변환만 해주면 충분했습니다.  
 저는 infix 함수가 직관적으로 쉽게 표현하는 듯해서 infix 함수로 작성했습니다.
 
 ```kotlin
