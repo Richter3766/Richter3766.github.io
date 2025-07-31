@@ -9,10 +9,6 @@ mathjax: true
 author: HyeonSoo
 ---
 
-# API 문서 자동화, 문서-코드 불일치 개선하기
-
-### Spring Rest Docs 적용기
-
 ## 개요
 
 이번 [자율 프로젝트](https://github.com/Mockin-2024)를 진행하며 API 문서 관리 방식에 근본적인 문제를 느꼈습니다.  바로 구현과 문서가 일치하지 않은 점이었는데요.   
