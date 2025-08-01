@@ -199,9 +199,9 @@ API 문서 자동화를 구축한 이후로는 문서 불일치나 파라미터�
 
 ### 더 읽어보기
 
-- [REST Docs 경로 문제 해결기](/2024-12-13-mockin_rest-docs2.md)
+- [REST Docs 경로 문제 해결기](/2024-12-13-mockin_rest-docs2)
 - [컨트롤러 테스트 코드 DSL 개선](/2024-12-20-mockin-rest-docs3)
-- [테스트 코드 json 기반 개선](/2024-12-24-mockin-rest-docs4.md)
+- [테스트 코드 json 기반 개선](/2024-12-24-mockin-rest-docs4)
 
 ## 참고 자료
 

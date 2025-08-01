@@ -11,7 +11,7 @@ author: HyeonSoo
 
 ## 개요
 
-이전 [Rest Docs 적용기](./2024-12-06-mockin-rest-docs1.md)에서 로컬에서 동작했던 빌드가 github action에서 동작하지 않았던 것과 도커 빌드 시 adoc 파일이 build가 아닌 루트 디렉토리에 생성된 이유를 모른 채 넘어갔었습니다.
+이전 [Rest Docs 적용기](/2024-12-06-mockin-rest-docs1)에서 로컬에서 동작했던 빌드가 github action에서 동작하지 않았던 것과 도커 빌드 시 adoc 파일이 build가 아닌 루트 디렉토리에 생성된 이유를 모른 채 넘어갔었습니다.
 
 그러다 한참이 지난 후 jacoco 테스트 커버리지 리포트를 적용하는 과정에서 뜬금없이 이 문제의 원인을 찾아 해결할 수 있었는데요.
 

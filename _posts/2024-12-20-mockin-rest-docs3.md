@@ -11,7 +11,7 @@ author: HyeonSoo
 
 ## 개요
 
-[이전 글](./2024-12-13-mockin_rest-docs2.md)에서 Kotlin DSL을 활용하여 Spring Rest Docs를 위한 코드를 쉽고 직관적으로 변경했었습니다.
+[이전 글](/2024-12-13-mockin_rest-docs2)에서 Kotlin DSL을 활용하여 Spring Rest Docs를 위한 코드를 쉽고 직관적으로 변경했었습니다.
 
 하지만 여전히 아쉬움이 남았었던 부분이 있었는데요.
 
