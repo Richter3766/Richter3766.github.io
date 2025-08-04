@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 똑똑 – 신뢰성 메시징 구조, 실전 실험과 트레이드오프
-subtitle: Pub/Sub에서 Redis Streams까지, 신뢰성 메시징 구조 전환기
+title: 똑똑 – 신뢰성 메시징 구조 실험기
+subtitle: Pub/Sub에서 Redis Streams까지, 신뢰성 메시징 구조 구축하기
 gh-repo: Richter3766/Richter.github.io
 tags: [project, knowckknowck]
 comments: true
@@ -9,13 +9,8 @@ mathjax: true
 author: HyeonSoo
 ---
 
-## 현대인의 문해력 향상 실시간 토론 서비스, **똑똑(KnowckknowcK)**
-
-### Pub/Sub에서 Redis Streams까지, 신뢰성 메시징 구조 전환기
-
 ### 1. 프로젝트 개요  
-[똑똑(KnowckknowcK)](https://github.com/KnowckknowcK)은
-현대인의 문해력 향상을 목표로 한 실시간 토론 서비스입니다.
+[똑똑(KnowckknowcK)](https://github.com/KnowckknowcK)은 현대인의 문해력 향상을 목표로 한 실시간 토론 서비스입니다.
 
 저는 이전에 이 프로젝트에서 웹소켓 기반의 실시간 토론방을 설계하고 개발하는 역할을 맡았었습니다.
 그때는 **실시간 시스템**을 구현하는 데에만 집중했던 만큼,
